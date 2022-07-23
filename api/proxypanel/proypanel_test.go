@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Misaka-blog/XrayR/api"
-	"github.com/Misaka-blog/XrayR/api/proxypanel"
+	"github.com/ilovecpc/XrayR/api"
+	"github.com/ilovecpc/XrayR/api/proxypanel"
 )
 
 func CreateClient() api.API {

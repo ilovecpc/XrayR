@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Misaka-blog/XrayR/api"
+	"github.com/ilovecpc/XrayR/api"
 	"github.com/juju/ratelimit"
 )
 

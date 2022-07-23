@@ -64,7 +64,7 @@ A Xray backend framework that can easily support many panels.
 ### 一键安装
 
 ```
-wget -N https://raw.githubusercontents.com/Misaka-blog/XrayR-script/master/install.sh && bash install.sh
+wget -N https://raw.githubusercontents.com/ilovecpc/XrayR-script/master/install.sh && bash install.sh
 ```
 
 ### 使用Docker部署
@@ -98,4 +98,4 @@ wget -N https://raw.githubusercontents.com/Misaka-blog/XrayR-script/master/insta
 
 ## Stars 增长记录
 
-[![Stargazers over time](https://starchart.cc/Misaka-blog/XrayR.svg)](https://starchart.cc/Misaka-blog/XrayR)
+[![Stargazers over time](https://starchart.cc/ilovecpc/XrayR.svg)](https://starchart.cc/ilovecpc/XrayR)
