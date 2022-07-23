@@ -69,7 +69,42 @@ wget -N https://raw.githubusercontents.com/ilovecpc/XrayR-script/master/install.
 
 ### 使用Docker部署
 
-[Docker部署教程](https://crackair.gitbook.io/xrayr-project/xrayr-xia-zai-he-an-zhuang/install/docker)
+#### 安装docker
+centos
+```
+yum install -y yum-utils
+yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+yum install docker-ce docker-ce-cli containerd.io -y
+systemctl start docker
+systemctl enable docker
+```
+
+Debian / Ubuntu
+```
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+systemctl start docker
+systemctl enable docker
+```
+
+#### 以Docker run方式安装Xray
+```
+docker pull ilovecpc/xrayr:latest && docker run --restart=always --name xrayr -d -v ${PATH_TO_CONFIG}/config.yml:/etc/XrayR/config.yml --network=host ilovecpc/xrayr:latest
+```
+
 
 ### 手动安装
 
