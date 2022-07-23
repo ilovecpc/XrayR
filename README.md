@@ -130,7 +130,3 @@ docker pull ilovecpc/xrayr:latest && docker run --restart=always --name xrayr -d
 [XrayR后端讨论](https://t.me/XrayR_project)
 
 [XrayR通知](https://t.me/XrayR_channel)
-
-## Stars 增长记录
-
-[![Stargazers over time](https://starchart.cc/ilovecpc/XrayR.svg)](https://starchart.cc/ilovecpc/XrayR)
